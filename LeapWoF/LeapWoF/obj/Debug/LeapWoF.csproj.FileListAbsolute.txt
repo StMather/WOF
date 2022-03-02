@@ -1,0 +1,6 @@
+C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\bin\Debug\LeapWoF.exe.config
+C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\bin\Debug\LeapWoF.exe
+C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\bin\Debug\LeapWoF.pdb
+C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\obj\Debug\LeapWoF.csproj.CoreCompileInputs.cache
+C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\obj\Debug\LeapWoF.exe
+C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\obj\Debug\LeapWoF.pdb
