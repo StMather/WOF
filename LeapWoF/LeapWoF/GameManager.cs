@@ -99,14 +99,37 @@ namespace LeapWoF
         }
 
         /// <summary>
+        /// Add -----'s to clue shown
+        /// </summary>
+        private string HideClue()
+        {
+            string clueOut = "";
+            foreach (char letter in TemporaryPuzzle)
+            {
+                if (letter != ' ')
+                {
+                    clueOut += "-";
+                }
+                else
+                {
+                    clueOut += " ";
+                }
+            }
+
+            return clueOut;
+        }
+
+        /// <summary>
         /// Draw the puzzle
         /// </summary>
         private void DrawPuzzle()
         {
             outputProvider.WriteLine("The puzzle is:");
-            outputProvider.WriteLine(TemporaryPuzzle);
+            outputProvider.WriteLine(HideClue());
+            //outputProvider.WriteLine(TemporaryPuzzle);
             outputProvider.WriteLine();
         }
+
 
         /// <summary>
         /// Spin the wheel and do the appropriate action
