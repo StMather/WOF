@@ -79,7 +79,7 @@ namespace LeapWoF
 
         public void PerformSingleTurn()
         {
-            outputProvider.Clear();
+            //outputProvider.Clear();
             DrawPuzzle();
             outputProvider.WriteLine("Type 1 to spin, 2 to solve");
             GameState = GameState.WaitingForUserInput;
@@ -120,8 +120,18 @@ namespace LeapWoF
 
         public void Solve()
         {
-            outputProvider.Write("Please enter your solution:");
+            outputProvider.Write("Please enter your solution????:");
             var guess = inputProvider.Read();
+
+            if (guess == TemporaryPuzzle)
+            {
+                outputProvider.Clear();
+                outputProvider.Write($"Congratulations! You're a WINNER!!! The word was {TemporaryPuzzle}! \n\n");
+            } else
+            {
+                outputProvider.Clear();
+                outputProvider.Write($"That's incorrect... Please try again...\n\n");
+            }
         }
         public void GuessLetter()
         {
