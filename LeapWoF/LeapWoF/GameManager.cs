@@ -23,7 +23,6 @@ namespace LeapWoF
 
         private string TemporaryPuzzle;
         public List<string> charGuessList = new List<string>();
-        // fdsfds
 
         public GameState GameState { get; private set; }
 
@@ -72,7 +71,7 @@ namespace LeapWoF
         }
         public void StartNewRound()
         {
-            TemporaryPuzzle = "Hello world";
+            TemporaryPuzzle = "Apple";
 
             // update the game state
             GameState = GameState.RoundStarted;
