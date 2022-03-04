@@ -102,14 +102,37 @@ namespace LeapWoF
         }
 
         /// <summary>
+        /// Add -----'s to clue shown
+        /// </summary>
+        private string HideClue()
+        {
+            string clueOut = "";
+            foreach (char letter in TemporaryPuzzle)
+            {
+                if (letter != ' ')
+                {
+                    clueOut += "-";
+                }
+                else
+                {
+                    clueOut += " ";
+                }
+            }
+
+            return clueOut;
+        }
+
+        /// <summary>
         /// Draw the puzzle
         /// </summary>
         private void DrawPuzzle()
         {
             outputProvider.WriteLine("The puzzle is:");
-            outputProvider.WriteLine(TemporaryPuzzle);
+            outputProvider.WriteLine(HideClue());
+            //outputProvider.WriteLine(TemporaryPuzzle);
             outputProvider.WriteLine();
         }
+
 
         /// <summary>
         /// Spin the wheel and do the appropriate action
@@ -123,10 +146,10 @@ namespace LeapWoF
 
         public void Solve()
         {
-            outputProvider.Write("Please enter your solution????:");
+            outputProvider.Write("Please enter your solution:");
             var guess = inputProvider.Read();
 
-            if (guess == TemporaryPuzzle)
+            if (guess.ToLower() == TemporaryPuzzle.ToLower())
             {
                 outputProvider.Clear();
                 outputProvider.Write($"Congratulations! You're a WINNER!!! The word was {TemporaryPuzzle}! \n\n");
