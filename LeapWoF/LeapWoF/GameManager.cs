@@ -143,10 +143,10 @@ namespace LeapWoF
 
         public void Solve()
         {
-            outputProvider.Write("Please enter your solution????:");
+            outputProvider.Write("Please enter your solution:");
             var guess = inputProvider.Read();
 
-            if (guess == TemporaryPuzzle)
+            if (guess.ToLower() == TemporaryPuzzle.ToLower())
             {
                 outputProvider.Clear();
                 outputProvider.Write($"Congratulations! You're a WINNER!!! The word was {TemporaryPuzzle}! \n\n");
