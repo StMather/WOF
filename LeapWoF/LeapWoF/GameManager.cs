@@ -23,6 +23,7 @@ namespace LeapWoF
 
         private string TemporaryPuzzle;
         public List<string> charGuessList = new List<string>();
+        // fdsfds
 
         public GameState GameState { get; private set; }
 
@@ -122,6 +123,11 @@ namespace LeapWoF
         {
             outputProvider.Write("Please enter your solution:");
             var guess = inputProvider.Read();
+
+            if (guess == TemporaryPuzzle)
+            {
+                outputProvider.Write($"The word was {TemporaryPuzzle}! Congratulations! You're a WINNER!!!");
+            }
         }
         public void GuessLetter()
         {
