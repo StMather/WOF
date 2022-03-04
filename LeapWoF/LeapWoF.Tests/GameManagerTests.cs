@@ -29,5 +29,15 @@ namespace LeapWoF.Tests
             gm.GuessLetter();
             Assert.IsTrue(gm.charGuessList.Contains("a"));
         }
+
+        [TestMethod]
+        public void TestFullSolveGuess()
+        {
+
+            string TemporaryPuzzle = "Stefan git test";
+            Assert.AreEqual(TemporaryPuzzle, "Stefan git test");
+            //gm.Solve();
+            Assert.AreEqual(TemporaryPuzzle.ToLower(), "stefan git test");
+        }
     }
 }
