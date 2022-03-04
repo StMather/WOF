@@ -73,7 +73,8 @@ namespace LeapWoF
         }
         public void StartNewRound()
         {
-            TemporaryPuzzle = "Hello world";
+            TemporaryPuzzle = "Stefan git test";
+
 
             // update the game state
             GameState = GameState.RoundStarted;
