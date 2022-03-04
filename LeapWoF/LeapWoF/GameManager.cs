@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using LeapWoF.Interfaces;
 
+//test comment
+
 namespace LeapWoF
 {
 
@@ -71,7 +73,8 @@ namespace LeapWoF
         }
         public void StartNewRound()
         {
-            TemporaryPuzzle = "Apple";
+            TemporaryPuzzle = "Stefan git test";
+
 
             // update the game state
             GameState = GameState.RoundStarted;

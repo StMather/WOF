@@ -4,3 +4,11 @@ C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\bin\Debug\LeapWoF.pdb
 C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\obj\Debug\LeapWoF.csproj.CoreCompileInputs.cache
 C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\obj\Debug\LeapWoF.exe
 C:\Users\v-marloh\source\repos\LeapWoF\LeapWoF\obj\Debug\LeapWoF.pdb
+C:\Users\v-stdaniels\Source\Repos\Wheel%20Of%20Fortune\LeapWoF\LeapWoF\bin\Debug\LeapWoF.exe.config
+C:\Users\v-stdaniels\Source\Repos\Wheel%20Of%20Fortune\LeapWoF\LeapWoF\bin\Debug\LeapWoF.exe
+C:\Users\v-stdaniels\Source\Repos\Wheel%20Of%20Fortune\LeapWoF\LeapWoF\bin\Debug\LeapWoF.pdb
+C:\Users\v-stdaniels\Source\Repos\Wheel%20Of%20Fortune\LeapWoF\LeapWoF\obj\Debug\LeapWoF.csproj.AssemblyReference.cache
+C:\Users\v-stdaniels\Source\Repos\Wheel%20Of%20Fortune\LeapWoF\LeapWoF\obj\Debug\LeapWoF.csproj.SuggestedBindingRedirects.cache
+C:\Users\v-stdaniels\Source\Repos\Wheel%20Of%20Fortune\LeapWoF\LeapWoF\obj\Debug\LeapWoF.csproj.CoreCompileInputs.cache
+C:\Users\v-stdaniels\Source\Repos\Wheel%20Of%20Fortune\LeapWoF\LeapWoF\obj\Debug\LeapWoF.exe
+C:\Users\v-stdaniels\Source\Repos\Wheel%20Of%20Fortune\LeapWoF\LeapWoF\obj\Debug\LeapWoF.pdb
