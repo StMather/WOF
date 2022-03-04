@@ -109,15 +109,33 @@ namespace LeapWoF
             string clueOut = "";
             foreach (char letter in TemporaryPuzzle)
             {
-                if (letter != ' ')
-                {
-                    clueOut += "-";
-                }
-                else
+                if (letter == ' ')
                 {
                     clueOut += " ";
                 }
+                else
+                {
+                    
+                    if (charGuessList.Count > 0)
+                    {
+                        String toAdd = "-";
+                        for (int i = 0 ;i < charGuessList.Count; i++)
+                        {
+                            if (charGuessList[i].ToLower() == Char.ToLower(letter).ToString())
+                            {
+                                toAdd = ""+ charGuessList[i];
+                            }
+                            
+                        }
+                        clueOut += toAdd;
+                    }
+                    else
+                    {
+                        clueOut += "-";
+                    }
+                }   
             }
+
 
             return clueOut;
         }
@@ -127,10 +145,12 @@ namespace LeapWoF
         /// </summary>
         private void DrawPuzzle()
         {
+
             outputProvider.WriteLine("The puzzle is:");
             outputProvider.WriteLine(HideClue());
             //outputProvider.WriteLine(TemporaryPuzzle);
             outputProvider.WriteLine();
+
         }
 
 
