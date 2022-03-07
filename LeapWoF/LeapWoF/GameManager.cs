@@ -184,19 +184,27 @@ namespace LeapWoF
             outputProvider.Write("Please guess a letter: ");
             var guess = inputProvider.Read();
             charGuessList.Add(guess);
-        // boilerplate for searching thru word. TODO: check if the letter exists in the string and return dashes for blank spaces
-		/* 
-		    for letter in guess
-			if (letter exists)
+
+            outputProvider.Write($"\nGuessed letters: ");
+            // show guessed letters from list
+            foreach (string guess1 in charGuessList)
             {
-            print the letter with dashes for spaces in string
+                outputProvider.Write($"{guess1}");
             }
-			 else
-			{
-                outputProvider.Clear();
-			    outputProvider.Write($"Sorry, please try again... \n \n")
-			};
-*/
+            outputProvider.Write($"\n\n");
+            // boilerplate for searching thru word. TODO: check if the letter exists in the string and return dashes for blank spaces
+            /* 
+                for letter in guess
+                if (letter exists)
+                {
+                print the letter with dashes for spaces in string
+                }
+                 else
+                {
+                    outputProvider.Clear();
+                    outputProvider.Write($"Sorry, please try again... \n \n")
+                };
+    */
         }
 
         /// <summary>
